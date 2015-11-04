@@ -1,0 +1,17 @@
+{
+	"name"    : "x-server-clusterize",
+	"version" : "0.0.1",
+	"dependencies" : {
+		"x-log" : "latest"
+	},
+	"devDependencies":{
+		"markdox" : "latest",
+		"vows"    : "latest",
+		"express" : "latest"
+	},
+	"main" : "clusterize.js",
+	"scripts": {
+		"prepublish" : "markdox -o ./README.md ./clusterize.js",
+		"test"       : "vows ./test/*.test.js"
+	}
+}
