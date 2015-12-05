@@ -5,13 +5,13 @@
     "x-log": "latest"
   },
   "devDependencies": {
-    "markdox": "latest",
     "vows": "latest",
-    "express": "latest"
+    "express": "latest",
+    "x-publish": "1.x.x"
   },
   "main": "clusterize.js",
   "scripts": {
-    "prepublish": "markdox -o ./README.md ./clusterize.js",
+    "prepublish": "./node_modules/x-publish/scripts/prepublish.sh",
     "test": "vows ./test/*.test.js"
   }
 }
