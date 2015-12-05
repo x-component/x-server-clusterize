@@ -1,8 +1,8 @@
 {
   "name": "x-server-clusterize",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "dependencies": {
-    "x-log": "latest"
+    "x-log": "1.x.x"
   },
   "devDependencies": {
     "vows": "latest",
